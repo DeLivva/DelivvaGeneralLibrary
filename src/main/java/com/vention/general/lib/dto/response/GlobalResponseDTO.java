@@ -1,4 +1,4 @@
-package com.vention.general.lib.exceptions.response;
+package com.vention.general.lib.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
