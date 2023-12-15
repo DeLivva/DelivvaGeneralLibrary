@@ -6,7 +6,7 @@
 
     <groupId>io.github.delivva</groupId>
     <artifactId>general-lib</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4</version>
 
     <name>Delivva General Library</name>
     <description>General lib for all services of Delivva project</description>
