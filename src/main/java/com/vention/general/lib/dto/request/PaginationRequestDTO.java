@@ -1,11 +1,18 @@
 package com.vention.general.lib.dto.request;
 
-public record PaginationRequestDTO(
-        Integer page,
-        Integer size
-) {
-    public PaginationRequestDTO {
-        page = page != null ? page : 0;
-        size = size != null ? size : 10;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class PaginationRequestDTO {
+    {
+        this.page = this.page != null ? this.page : 0;
+        this.size = this.size != null ? this.size : 10;
     }
+
+    private Integer page;
+    private Integer size;
 }

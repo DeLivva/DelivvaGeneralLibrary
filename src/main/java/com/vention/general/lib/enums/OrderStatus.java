@@ -11,5 +11,14 @@ public enum OrderStatus {
     UNDER_CONSIDERATION,
     DISPUTE_CLOSED_CUSTOMER_WIN,
     DISPUTE_CLOSED_COURIER_WIN,
-    DONE
+    DONE;
+
+    public static OrderStatus getByName(String status) {
+        for (OrderStatus orderStatus : values()) {
+            if (orderStatus.name().equals(status)) {
+                return orderStatus;
+            }
+        }
+        return null;
+    }
 }
